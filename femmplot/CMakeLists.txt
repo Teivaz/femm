@@ -31,3 +31,4 @@ add_executable("femmplot"
 )
 
 target_compile_definitions("femmplot" PUBLIC "WIN32" "_WINDOWS")
+set_target_properties("femmplot" PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS")

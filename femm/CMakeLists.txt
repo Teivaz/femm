@@ -504,8 +504,7 @@ add_executable("femm"
 
 target_compile_definitions("femm" PUBLIC "WIN32" "_WINDOWS")
 
-set_target_properties("femm" PROPERTIES LINK_FLAGS_DEBUG "/SUBSYSTEM:WINDOWS")
-set_target_properties("femm" PROPERTIES LINK_FLAGS_RELEASE "/SUBSYSTEM:WINDOWS")
+set_target_properties("femm" PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS")
 target_link_libraries("femm" "liblua" "ResizableLib")
 
 set_source_files_properties("StdAfx.cpp" PROPERTIES COMPILE_FLAGS "/YcStdAfx.h")
