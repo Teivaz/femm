@@ -13,4 +13,4 @@ add_subdirectory(liblua)
 add_subdirectory(ResizableLib)
 add_subdirectory(femm)
 add_subdirectory(triangle)
-
+add_subdirectory(csolv)

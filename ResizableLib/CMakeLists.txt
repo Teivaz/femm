@@ -1,26 +1,5 @@
 project("ResizableLib")
 
-set(source_files
-	"ResizableDialog.cpp"
-	"ResizableFormView.cpp"
-	"ResizableFrame.cpp"
-	"ResizableGrip.cpp"
-	"ResizableLayout.cpp"
-	"ResizableLib.dsp"
-	"ResizableLib.dsw"
-	"ResizableLib.vcproj"
-	"ResizableLib.vcxproj"
-	"ResizableLib.vcxproj.filters"
-	"ResizableMDIChild.cpp"
-	"ResizableMDIFrame.cpp"
-	"ResizableMinMax.cpp"
-	"ResizablePage.cpp"
-	"ResizablePageEx.cpp"
-	"ResizableSheet.cpp"
-	"ResizableSheetEx.cpp"
-	"ResizableState.cpp"
-	"StdAfx.cpp"
-)
 set(header_files
 	"ResizableMsgSupport.inl"
 	"ResizableDialog.h"
@@ -39,6 +18,25 @@ set(header_files
 	"ResizableState.h"
 	"StdAfx.h"
 )
+source_group("Header Files" FILES ${header_files})
+
+set(source_files
+	"ResizableDialog.cpp"
+	"ResizableFormView.cpp"
+	"ResizableFrame.cpp"
+	"ResizableGrip.cpp"
+	"ResizableLayout.cpp"
+	"ResizableMDIChild.cpp"
+	"ResizableMDIFrame.cpp"
+	"ResizableMinMax.cpp"
+	"ResizablePage.cpp"
+	"ResizablePageEx.cpp"
+	"ResizableSheet.cpp"
+	"ResizableSheetEx.cpp"
+	"ResizableState.cpp"
+	"StdAfx.cpp"
+)
+source_group("Source Files" FILES ${source_files})
 
 add_library("ResizableLib" "${source_files}" "${header_files}")
 

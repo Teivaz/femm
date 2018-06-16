@@ -8,6 +8,7 @@ set(header_files
 	"resource.h"
 	"StdAfx.h"
 )
+source_group("Header Files" FILES ${header_files})
 
 set(source_files
 	"femmplot.cpp"
@@ -16,6 +17,7 @@ set(source_files
 	"MainFrm.cpp"
 	"StdAfx.cpp"
 )
+source_group("Source Files" FILES ${source_files})
 
 set(resource_files
 	"femmplot.rc"
@@ -23,6 +25,7 @@ set(resource_files
 	"res/femmplot.rc2"
 	"res/femmplotDoc.ico"
 )
+source_group("Resource Files" FILES ${resource_files})
 
 add_executable("femmplot"
 	"${header_files}"

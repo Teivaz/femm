@@ -26,6 +26,7 @@ set(header_files
 	"lvm.h"
 	"lzio.h"
 )
+source_group("Header Files" FILES ${header_files})
 
 set(source_files
 	"COMPLEX.CPP"
@@ -54,5 +55,6 @@ set(source_files
 	"lvm.cpp"
 	"lzio.cpp"
 )
+source_group("Source Files" FILES ${source_files})
 
 add_library("liblua" "${source_files}" "${header_files}")
