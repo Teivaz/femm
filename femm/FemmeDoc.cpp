@@ -2784,9 +2784,9 @@ void CFemmeView::lnu_show_mesh()
 	OnShowMesh();
 }
 
-void CFemmeView::lnu_analyze(int bShow)
+void CFemmeView::lnu_analyze(int bHide)
 {
-	if (bShow) bLinehook=HiddenLua;
+	if (bHide) bLinehook=HiddenLua;
 	else bLinehook=NormalLua;
 	OnMenuAnalyze();
 }
