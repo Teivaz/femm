@@ -130,11 +130,6 @@ set(common_header
 	"MyTabCtrl.h"
 	"OutBox.h"
 	"PromptBox.h"
-	"ResizableDialog.h"
-	"ResizableGrip.h"
-	"ResizableLayout.h"
-	"ResizableMinMax.h"
-	"ResizableState.h"
 	"spars.h"
 	"Xyplot.h"
 )
@@ -449,29 +444,10 @@ set(MDI_Shell_resource
 	"res/toolbar1.bmp"
 	"res/tree.bmp"
 	"res/viewtool.bmp"
-)
-source_group("MDI Shell\\Resource Files" FILES ${MDI_Shell_resource})
-
-
-set(unused_files
-	"backup_resource.h"
-	"femmDoc.cpp"
-	"femmDoc.h"
-	"LUA.H"
-	"luadebug.h"
-	"mathlink.h"
 	"res/cdrawtyp.bmp"
 	"res/cviewtyp.bmp"
-	"ResizableFormView.h"
-	"ResizableFrame.h"
-	"ResizableMDIChild.h"
-	"ResizableMDIFrame.h"
-	"ResizableMsgSupport.h"
-	"ResizablePage.h"
-	"ResizablePageEx.h"
-	"ResizableSheet.h"
-	"ResizableSheetEx.h"
 )
+source_group("MDI Shell\\Resource Files" FILES ${MDI_Shell_resource})
 
 set(other_files
 	"res/femm.tlb"

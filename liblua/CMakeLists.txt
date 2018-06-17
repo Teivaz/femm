@@ -58,3 +58,5 @@ set(source_files
 source_group("Source Files" FILES ${source_files})
 
 add_library("liblua" "${source_files}" "${header_files}")
+
+target_include_directories("liblua" PUBLIC "${CMAKE_CURRENT_LIST_DIR}")

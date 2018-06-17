@@ -44,3 +44,5 @@ target_compile_definitions("ResizableLib" PUBLIC "WIN32" "_WINDOWS")
 
 set_source_files_properties("StdAfx.cpp" PROPERTIES COMPILE_FLAGS "/YcStdAfx.h")
 target_compile_options("ResizableLib" PUBLIC "/YuStdAfx.h")
+
+target_include_directories("ResizableLib" PUBLIC "${CMAKE_CURRENT_LIST_DIR}")
