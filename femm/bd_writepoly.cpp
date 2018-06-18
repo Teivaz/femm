@@ -950,7 +950,7 @@ BOOL CbeladrawDoc::FunnyOnWritePoly()
 			
 			if(len1<=0) len1=len2;
 			if(len2<=0) len2=len1;
-			len=min(len1,len2);
+			len=std::min(len1,len2);
 
 			linelist[pbclst[j].seg[0]].MaxSideLength=len;
 			linelist[pbclst[j].seg[1]].MaxSideLength=len;
@@ -974,7 +974,7 @@ BOOL CbeladrawDoc::FunnyOnWritePoly()
 			len1=arclist[pbclst[j].seg[0]].MaxSideLength;
 			len2=arclist[pbclst[j].seg[1]].MaxSideLength;
 	
-			len=min(len1,len2);
+			len= std::min(len1,len2);
 
 			arclist[pbclst[j].seg[0]].MaxSideLength=len;
 			arclist[pbclst[j].seg[1]].MaxSideLength=len;

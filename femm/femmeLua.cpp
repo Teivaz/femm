@@ -8,6 +8,7 @@
 #include "promptbox.h"
 #include "MainFrm.h"
 #include "ChildFrm.h"
+#include "dlib_lua.h"
 
 extern BOOL lua_byebye;
 extern void *pFemmeDoc;
@@ -25,6 +26,8 @@ extern int m_luaWindowStatus;
 
 void CFemmeDoc::initalise_lua()
 {
+	initalise_dlib_lua(lua);
+
 	// generalized lua functionality
 	// should put these in femm.cpp or something
 

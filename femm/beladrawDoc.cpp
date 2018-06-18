@@ -741,7 +741,7 @@ BOOL CbeladrawDoc::GetIntersection(int n0, int n1, int segm, double *xi, double 
 	p1=nodelist[linelist[segm].n1].CC();
 	q0=nodelist[n0].CC();
 	q1=nodelist[n1].CC();
-	ee=min(abs(p1-p0),abs(q1-q0))*1.0e-8;
+	ee= std::min(abs(p1-p0),abs(q1-q0))*1.0e-8;
 
 	// Rotate and scale the prospective line
 	q0=(q0-p0)/(p1-p0);

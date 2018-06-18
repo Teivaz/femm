@@ -387,6 +387,7 @@ set(MDI_Shell_header
 	"NewDocDlg.h"
 	"Preferences.h"
 	"resource.h"
+	"dlib_lua.h"
 	"StdAfx.h"
 )
 source_group("MDI Shell\\Header Files" FILES ${MDI_Shell_header})
@@ -407,6 +408,7 @@ set(MDI_Shell_source
 	"MyRecentFileList.cpp"
 	"NewDocDlg.cpp"
 	"Preferences.cpp"
+	"dlib_lua.cpp"
 	"StdAfx.cpp"
 )
 source_group("MDI Shell\\Source Files" FILES ${MDI_Shell_source} ${precompiled_header_source})
@@ -481,7 +483,7 @@ add_executable("femm"
 target_compile_definitions("femm" PUBLIC "WIN32" "_WINDOWS")
 
 set_target_properties("femm" PROPERTIES LINK_FLAGS "/SUBSYSTEM:WINDOWS")
-target_link_libraries("femm" "liblua" "ResizableLib")
+target_link_libraries("femm" "liblua" "ResizableLib" "dlib")
 
 set_source_files_properties("StdAfx.cpp" PROPERTIES COMPILE_FLAGS "/YcStdAfx.h")
 target_compile_options("femm" PUBLIC "/YuStdAfx.h")

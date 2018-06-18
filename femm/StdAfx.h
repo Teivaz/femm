@@ -40,6 +40,7 @@
 
 #include <vector>
 #include<math.h>
+#include <dlib/optimization.h>
 #define PI 3.141592653589793238462643383
 #define muo 1.2566370614359173e-6
 #define eo 8.85418781762e-12
